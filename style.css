@@ -91,8 +91,8 @@ section {
 
     .roll {
         position: absolute;
-        bottom: 50px;
-        right: 20px;;
+        bottom: 8vw;
+        right: 5vw;
         z-index: 2;
         opacity: 0;
 
