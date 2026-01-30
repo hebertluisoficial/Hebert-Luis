@@ -16,9 +16,11 @@ body {
 #preloader {
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     background-color: rgba(16, 14, 22, 0.4);
     z-index: 999;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: end;
     align-items: end;
@@ -126,7 +128,7 @@ section {
     img {
         width: 60vw;
         opacity: 0;
-        filter: blur(100px);
+        filter: blur(200px);
     }
 
     .textoAnimado {
