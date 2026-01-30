@@ -97,6 +97,6 @@ tl_pre.to("#preloader path", {
 
 tl_pre.to("#preloader path", {
     duration: 1,
-    fill: "rgb(15, 17, 28)",
+    fill: "rgb(30, 33, 52)",
     strokeDashoffset: 0
 }, "-=1");
