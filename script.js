@@ -53,9 +53,8 @@ function scroll() {
     "-=1",
   );
 
-  tl.from(".secao2 img", {
-    opacity: 0,
-    filter: "blur(20px)",
+  tl.to(".secao2 img", {
+    opacity: 1,
     duration: 0.5,
   });
 
