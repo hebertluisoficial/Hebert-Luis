@@ -22,12 +22,12 @@ body {
     top: 0;
     left: 0;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: center;
+    align-items: center;
 
     svg {
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vh;
         
         path {
             fill: rgb(11, 12, 16);
