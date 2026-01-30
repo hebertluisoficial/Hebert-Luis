@@ -92,9 +92,9 @@ section {
     .roll {
         position: absolute;
         bottom: 50px;
-        left: 50%;
-        transform: translate(-50%, 0%);
+        right: 20px;;
         z-index: 2;
+        opacity: 0;
 
         .rollButton {
             position: absolute;

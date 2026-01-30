@@ -38,8 +38,8 @@ function scroll() {
   tl.to(
     ".rollButton",
     {
-      translateY: "-98px",
-      duration: 1,
+      translateY: "-540px",
+      duration: 2,
     },
     "-=1.8",
   );
@@ -86,6 +86,9 @@ const tl_pre = gsap.timeline({
             opacity: 0,
             display: "none",
         }, "+=0.85");
+        gsap.to(".roll", {
+          opacity: 1
+        }, "+=0.1");
         gsap.to("body", {
             overflowY: "scroll",
         }, "+=0.1");
