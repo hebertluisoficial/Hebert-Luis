@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Benguiat";
+  src: url(fontes/Benguiat\ Bold.ttf);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.containerPai {
+    width: 100%;
+    min-height: 100vh;
+    position: relative
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.secao1 {
+    position: relative;
+    z-index: 99;
+    mask-image: url("images/hebert_sign.svg");
+    mask-repeat: no-repeat;
+    mask-size: 5000vw;
+    mask-position: center;
+
+    .bg1 {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .logoBg {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .hebertBg{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-size: cover;
+        object-fit: cover;
+        filter: blur(0);
+    }
+
+    .secaoBranca {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: transparent;
+    }
+}
+
+.secao2 {
+    background-image: url("images/bg_alt.webp");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    img {
+        width: 20vw;
+    }
+
+    .textoAnimado {
+        display: flex;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: max-content;
+
+        h3 {
+            font-family: "Benguiat", sans-serif;
+            font-size: 12vw;
+            margin-left: 80px;
+            mix-blend-mode: color-dodge;
+            color: rgb(172, 173, 173);
+        }
+    }
+}
+
+.secao3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mask-image: url("images/elipse.svg");
+    mask-repeat: no-repeat;
+    mask-size: 0vw;
+    mask-position: center;
+    z-index: 999;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(5px);
+    }
+}
