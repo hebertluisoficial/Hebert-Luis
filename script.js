@@ -86,6 +86,9 @@ const tl_pre = gsap.timeline({
             opacity: 0,
             display: "none",
         }, "+=0.85");
+        gsap.to("body", {
+            overflowY: "scroll",
+        }, "+=0.1");
     },
 });
 
