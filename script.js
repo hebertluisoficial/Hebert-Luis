@@ -9,19 +9,25 @@ const tl = gsap.timeline({
 });
 
 tl.to(".secao1", {
-    maskSize: "20vw",
+    maskSize: "80vw",
     duration: 2
 });
 
 tl.to(".logoBg", {
     opacity: 0,
-    scale: 0.5,
+    scale: 0.7,
+    translateY: "-80px",
     duration: 1
 }, "-=1.8");
 
 tl.to(".hebertBg", {
     filter: "blur(5px)",
-    translateX: "-200px",
+    translateY: "100px",
+    duration: 1
+}, "-=1.8");
+
+tl.to(".rollButton", {
+    translateY: "-98px",
     duration: 1
 }, "-=1.8");
 
@@ -38,12 +44,12 @@ tl.from(".secao2 img", {
 
 tl.to(".textoAnimado h3", {
     translateX: "-150%",
-    opacity: 0,
+    opacity: .1,
     duration: 5
 }, "-=2.5");
 
 tl.to(".secao3", {
-    maskSize: "200vw",
+    maskSize: "300vw",
     duration: 2
 }, "-=1");
 
